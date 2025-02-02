@@ -1,0 +1,15 @@
+.one {
+    font-size: 60px;
+    margin: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: aqua;
+}
+
+.two {
+    font-size: 60px;
+    margin: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: rebeccapurple;
+}
