@@ -3,6 +3,20 @@
     src: url('Fonts/daily_bubble/Daily Bubble.ttf');
 }
 
+@font-face {
+    font-family: 'Valentine Cute';
+    src: url('Fonts/valentine_cute/Valentine\ Cute.ttf');
+}
+
+@font-face {
+    font-family: 'My Valentine';
+    src: url('Fonts/i_found_my_valentine/I Found My Valentine - OTF.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     margin: 0px;
@@ -10,7 +24,26 @@ body {
     background-attachment: fixed;
     justify-content: space-evenly;
     flex-direction: column;
-    
+}
+
+p, a {
+    font-family: 'My Valentine', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+    color: rgb(141, 194, 240);
+}
+
+a:hover {
+    color: rgb(141, 194, 240);
+    transition: all 0.2s ease-in-out;
+    text-shadow: 0px 5px 15px rgb(216, 177, 213);
+}
+
+p {
+    color: rgb(192, 96, 155);
 }
 
 /* INTRO BANNER */
@@ -24,10 +57,11 @@ body {
     display: -webkit-flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     margin: 0px;
     padding: 10px;
     height: 10%;
-    background-color: rgb(240, 163, 210);
+    background-color: rgba(255, 255, 255, 0.664);
 }
 
 #portrait {
@@ -43,33 +77,42 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    
 }
 
 #introText {
     align-content: center;
     text-align: center;
     font-size: 40px;
-    /* padding: 50px; */
-    /* color: white; */
+    color: rgb(192, 96, 155);
     font-family: 'Daily Bubble', Arial, Helvetica, sans-serif;
 }
 
+#introBorder {
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Daily Bubble', Arial, Helvetica, sans-serif;
+    color: rgb(192, 96, 155);
+}
+
 #nameText {
-    font-family: 'Helvetica', sans-serif;
     align-content: center;
     text-align: center;
     font-size: 30px;
     border: 0px;
     margin: 0px;
+    color: rgb(240, 163, 210);
 }
 
 #decoratedText {
-    font-family: 'Helvetica', sans-serif;
     font-size: 20px;
     align-content: center;
     text-align: center;
     border: 0px;
     margin: 0px;
+    color: rgb(240, 163, 210);
+
 }
 
 /* NAVIGATION BAR */
@@ -77,14 +120,14 @@ body {
 .navigationBar {
     display: -webkit-flex;
     justify-content: space-evenly;
-    background-color:  rgb(240, 163, 210);
-    border: 5px white;
+    background-color: rgba(255, 255, 255, 0.664);
+    border: 5px rgb(240, 163, 210);
     border-style: dashed;
+    overflow: auto;
     /* background-image: linear-gradient(to bottom, rgb(240, 163, 210), rgba(255, 255, 255, 0)); */
 }
 
 .navigationBar a {
-    color: rgb(216, 237, 255);
     font-family: 'Daily Bubble', sans-serif;
     font-size: 30px;
 }
@@ -99,12 +142,14 @@ body {
     margin: 100px;
     background-color: rgba(255, 255, 255, 0.664);
     border-radius: 10px;
+    padding: 10px;
 }
 
 .containerName {
     font-family: 'Daily Bubble';
     font-size: 200%;
     text-align: center; 
+    color: rgb(192, 96, 155);
 }
 
 .containerSubName {
@@ -112,6 +157,8 @@ body {
     text-align: center;
     font-size: 150%;
     font-family: 'Daily Bubble', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .containerSubNameBorder {
@@ -125,4 +172,60 @@ body {
 .containerContent {
     font-size: 140%;
     text-align: center;
+}
+
+/* SCROLL CONTAINER */
+.scrollContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    flex-grow: 1;
+}
+
+.scrollItemBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-shrink: 0;
+}
+
+.scrollItemBox > img {
+    width: 200px;
+}
+
+.scrollItemBox > p {
+    font-size: 40px;
+    width: 60%;
+    text-align: center;
+}
+
+/* MESSAGE BOARD */
+
+.messageBoardForm {
+    padding: 40px;
+}
+
+.messageBoardForm > textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+/* MESSAGE BOARD REPLIES */
+
+#messageBoardReplies {
+    display: flex;
+    flex-direction: column;
+}
+
+#messageNote {
+    border: 5px rgb(240, 163, 210);;
+    border-style: dashed;
+    margin: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.664);
 }
