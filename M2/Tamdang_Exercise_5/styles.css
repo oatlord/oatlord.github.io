@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Heavy Rain';
+    src: url("Assets/Fonts/heavy_rain_2/HeavyRain_PERSONAL_USE_ONLY.ttf");
+}
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url("Assets/Fonts/elegant_typewriter/ELEGANT TYPEWRITER Regular.ttf");
+}
+
+body {
+    font-family: 'Typewriter', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f7e4c8;
+}
+#quoteDisplay {
+    font-family: 'Typewriter';
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+#author {
+    font-family: 'Heavy Rain';
+    color: #555;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #f5a819;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #b46318;
+}
