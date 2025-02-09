@@ -23,7 +23,6 @@ function typeDisplay(data) {
     for (let i = 0; i < data.types.length; i++) {
         typeString += `<p class="pkmnType">${data.types[i].type.name}</p>`
     }
-    console.log(typeString);
     return typeString;
 }
 
