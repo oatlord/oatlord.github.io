@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'PokemonFont';
+    src: url('Assets/Fonts/pokemon_classic/Pokemon Classic.ttf');
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-color: rgb(194, 255, 232);
+    font-family: 'PokemonFont', sans-serif;
+}
+
+#pkmnDetails {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    background-color: rgb(111, 211, 172);
+    border: rgb(64, 153, 119) solid;
+    border-radius: 100px;
+}
+
+#pkmnVisualProfile {
+    padding: 10px;
+    justify-self: center;
+    justify-items: center;
+}
+
+#pkmnSprite {
+    width: auto;
+    height: 300px;
+}
+
+#pkmnStatProfile {
+    padding: 10px;
+    text-align: center;
+    justify-items: center;
+    align-self: center;
+}
+
+.btn {
+    display: inline;
+    margin: 20px;
+    padding: 10px 10px;
+
+    font-size: 20px;
+    font-family: 'PokemonFont', sans-serif;
+
+    background-color: rgb(111, 211, 172);
+    border: rgb(64, 153, 119) solid;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    background-color: rgb(54, 179, 131);
+}
